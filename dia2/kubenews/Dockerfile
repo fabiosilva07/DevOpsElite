@@ -1,7 +1,7 @@
 FROM node:18.11.0
 WORKDIR /app
-COPY ./kube-news/src/package*.json ./
+COPY ./kubenews/src/package*.json ./
 RUN npm install
-COPY ./kube-news/src ./
+COPY ./kubenews/src ./
 EXPOSE 8080
 CMD ["node","server.js"]
